@@ -12,4 +12,3 @@ RUN cnpm rebuild node-sass
 RUN cnpm install --save-dev cache-loader
 
 RUN echo "alias ll='ls -lh --color=auto'" >> ~/.bashrc
-RUN source ~/.bashrc
