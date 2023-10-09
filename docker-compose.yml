@@ -10,5 +10,5 @@ services:
         volumes:
             - ./src:/var/www
         ports:
-            - "33000:3000"
+            - "${NODE_PORT}:3000"
         tty: true
