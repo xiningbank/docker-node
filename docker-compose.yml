@@ -8,7 +8,7 @@ services:
         image: ${NODE_IMAGE}
         container_name: ${NODE_CONTAINER_NAME:-node}
         volumes:
-            - ./src:/var/www/html
+            - ${HOST_SRC_PATH}:/var/www/html
         ports:
             - "${NODE_PORT}:3000"
         tty: true
