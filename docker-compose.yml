@@ -5,10 +5,9 @@ services:
         build:
             context: ./Dockerfiles
             dockerfile: ${NODE_DOCKERFILE}
-        image: ${NODE_IMAGE}
         container_name: ${NODE_CONTAINER_NAME:-node}
         volumes:
-            - ${HOST_SRC_PATH}:/var/www/html
+            - ${HOST_SRC}:/var/www/html
         ports:
             - "${NODE_PORT}:3000"
         tty: true
